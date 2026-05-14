@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trần Công Minh Đức - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">TRẦN CÔNG MINH ĐỨC</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Trang Chủ</a></li>
+                <li><a href="#about" class="nav-link">Giới Thiệu</a></li>
+                <li><a href="#skills" class="nav-link">Kỹ Năng</a></li>
+                <li><a href="#contact" class="nav-link">Liên Hệ</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="clouds-bg">
+            <div class="cloud cloud1"></div>
+            <div class="cloud cloud2"></div>
+            <div class="cloud cloud3"></div>
+            <div class="cloud cloud4"></div>
+        </div>
+        
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Trần Công Minh Đức</h1>
+                <p class="hero-slogan">Nơi ý tưởng không có giới hạn</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('portfolio')">Xem Portfolio</button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('contact')">Liên Hệ</button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-circle"></div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Giới Thiệu</h2>
+            
+            <div class="about-content">
+                <div class="about-card fade-in">
+                    <div class="avatar">
+                        <div class="avatar-placeholder"></div>
+                    </div>
+                    <div class="about-info">
+                        <h3>Trần Công Minh Đức</h3>
+                        <p class="role">UI/UX & Creative Design Student</p>
+                        <p class="university">
+                            <span class="icon">🎓</span>
+                            Sinh viên năm 2 - Đại học Gia Định
+                        </p>
+                        <p class="bio">
+                            Đam mê thiết kế sáng tạo và tạo ra những trải nghiệm người dùng tuyệt vời. 
+                            Tôi kết hợp kỹ năng thiết kế UI/UX với khả năng sử dụng AI để tạo ra các sản phẩm đổi mới và ấn tượng.
+                        </p>
+                        <div class="skills-highlight">
+                            <div class="skill-tag">Website Design</div>
+                            <div class="skill-tag">AI Poster Design</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills & Experience Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Kỹ Năng & Kinh Nghiệm</h2>
+            
+            <div class="skills-grid">
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path d="M8 8H40V40H8V8Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                            <path d="M12 16H36" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M12 24H36" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M12 32H28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Thiết Kế Website</h3>
+                    <p>Tạo ra giao diện website hiện đại, thân thiện người dùng, và tối ưu hóa trải nghiệm khách hàng.</p>
+                    <div class="experience">
+                        <strong>Dự Án:</strong> Thiết kế ứng dụng đặt hàng thực phẩm
+                    </div>
+                </div>
+
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path d="M8 12C8 9.79086 9.79086 8 12 8H36C38.2091 8 40 9.79086 40 12V36C40 38.2091 38.2091 40 36 40H12C9.79086 40 8 38.2091 8 36V12Z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M16 18L24 28L32 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Thiết Kế Poster AI</h3>
+                    <p>Sử dụng công nghệ AI để tạo ra các thiết kế poster sáng tạo, hấp dẫn và chuyên nghiệp.</p>
+                    <div class="experience">
+                        <strong>Dự Án:</strong> Tạo poster quảng cáo sự kiện
+                    </div>
+                </div>
+
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path d="M8 16C8 13.7909 9.79086 12 12 12H36C38.2091 12 40 13.7909 40 16V36C40 38.2091 38.2091 40 36 40H12C9.79086 40 8 38.2091 8 36V16Z" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="24" cy="24" r="6" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="34" cy="18" r="2" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>Dự Án UI/UX Sáng Tạo</h3>
+                    <p>Phát triển các giải pháp UI/UX toàn diện với tập trung vào tính sáng tạo và tính dễ sử dụng.</p>
+                    <div class="experience">
+                        <strong>Dự Án:</strong> Ứng dụng quản lý nhiệm vụ hiện đại
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Liên Hệ</h2>
+            
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="contact-card fade-in">
+                        <div class="contact-icon">
+                            <svg width="40" height="40" viewBox="0 0 48 48" fill="none">
+                                <path d="M12 4H36C39.3137 4 42 6.68629 42 10V38C42 41.3137 39.3137 44 36 44H12C8.68629 44 6 41.3137 6 38V10C6 6.68629 8.68629 4 12 4Z" stroke="currentColor" stroke-width="2"/>
+                                <path d="M14 16L24 28L34 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3>Email</h3>
+                        <p><a href="mailto:trancongminhduc10@gmail.com">trancongminhduc10@gmail.com</a></p>
+                    </div>
+
+                    <div class="contact-card fade-in">
+                        <div class="contact-icon">
+                            <svg width="40" height="40" viewBox="0 0 48 48" fill="none">
+                                <path d="M10 6H14C15.1046 6 16 6.89543 16 8V14C16 15.1046 15.1046 16 14 16H12C18.6274 26.3726 26.6274 32 38 38V36C38 34.8954 38.8954 34 40 34H46C47.1046 34 48 34.8954 48 36V42C48 44.2091 46.2091 46 44 46H42C21.9101 46 6 30.0899 6 10V8C6 5.79086 7.79086 4 10 4H14" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3>Điện Thoại</h3>
+                        <p><a href="tel:0383136589">0383 136 589</a></p>
+                    </div>
+
+                    <div class="contact-card fade-in">
+                        <div class="contact-icon">
+                            <svg width="40" height="40" viewBox="0 0 48 48" fill="none">
+                                <path d="M24 4C12.95 4 4 12.95 4 24C4 35.05 12.95 44 24 44C35.05 44 44 35.05 44 24C44 12.95 35.05 4 24 4Z" stroke="currentColor" stroke-width="2"/>
+                                <path d="M24 8V24L32 32" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <h3>Địa Điểm</h3>
+                        <p>Thành phố Hồ Chí Minh, Việt Nam</p>
+                    </div>
+                </div>
+
+                <form class="contact-form fade-in" id="contactForm">
+                    <h3>Gửi Tin Nhắn</h3>
+                    <div class="form-group">
+                        <input type="text" placeholder="Tên của bạn" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email của bạn" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Tin nhắn của bạn" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Gửi Tin Nhắn</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Trần Công Minh Đức. Tất cả các quyền được bảo lưu.</p>
+            <p>Nơi ý tưởng không có giới hạn</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
