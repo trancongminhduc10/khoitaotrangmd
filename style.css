@@ -624,24 +624,7 @@ body {
     border-color: var(--primary-color);
 }
 
-.project-logo {
-    width: 100%;
-    height: 160px;
-    background: linear-gradient(135deg, rgba(0, 102, 204, 0.08) 0%, rgba(0, 128, 255, 0.08) 100%);
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 1.5rem;
-    border: 2px dashed rgba(0, 102, 204, 0.3);
-    overflow: hidden;
-}
 
-.logo-image {
-    max-width: 90%;
-    max-height: 90%;
-    object-fit: contain;
-}
 
 .skill-icon {
     width: 60px;
