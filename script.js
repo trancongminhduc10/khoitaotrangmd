@@ -186,17 +186,36 @@ function preloadImages() {
 // Call preload when page loads
 window.addEventListener('load', preloadImages);
 
-// Add loading state for buttons
-document.querySelectorAll('.btn').forEach(btn => {
-    btn.addEventListener('click', function() {
-        if (!this.classList.contains('disabled')) {
-            this.style.opacity = '0.8';
-            setTimeout(() => {
-                this.style.opacity = '1';
-            }, 100);
-        }
-    });
-});
+// Add falling petals animation
+function createFallingPetals() {
+    const petalsContainer = document.querySelector('.falling-petals');
+    const numberOfPetals = 15;
+
+    for (let i = 0; i < numberOfPetals; i++) {
+        const petal = document.createElement('div');
+        petal.className = 'petal';
+
+        // Random properties
+        const size = Math.random() * 20 + 10; // 10-30px
+        const left = Math.random() * 100; // 0-100%
+        const delay = Math.random() * 10; // 0-10s
+        const duration = Math.random() * 10 + 15; // 15-25s
+        const rotation = Math.random() * 360; // 0-360deg
+        const swayAmount = Math.random() * 40 - 20; // -20 to 20px sway
+
+        petal.style.width = `${size}px`;
+        petal.style.height = `${size}px`;
+        petal.style.left = `${left}%`;
+        petal.style.animationDelay = `${delay}s`;
+        petal.style.animationDuration = `${duration}s`;
+        petal.style.setProperty('--sway', `${swayAmount}px`);
+
+        petalsContainer.appendChild(petal);
+    }
+}
+
+// Initialize falling petals when page loads
+document.addEventListener('DOMContentLoaded', createFallingPetals);
 
 // Smooth scroll for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
