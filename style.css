@@ -557,6 +557,10 @@ body {
     letter-spacing: -0.5px;
 }
 
+.text-left {
+    text-align: left !important;
+}
+
 /* About Section */
 .about {
     padding: 6rem 0;
